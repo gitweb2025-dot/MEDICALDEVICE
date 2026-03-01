@@ -1,0 +1,1505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STACKLY | Advanced Medical Devices & Healthcare Equipment</title>
+    <meta
+      name="title"
+      content="STACKLY | Advanced Medical Devices & Healthcare Equipment"
+    />
+    <meta
+      name="description"
+      content="Trusted medical devices and healthcare equipment designed for hospitals, clinics, and medical professionals."
+    />
+    <meta
+      name="keywords"
+      content="medical devices, healthcare equipment, diagnostic devices, hospital equipment, medical technology, surgical equipment, healthcare solutions"
+    />
+    <meta name="author" content="STACKLY" />
+
+    <meta
+      property="og:title"
+      content="STACKLY | Advanced Medical Devices & Healthcare Equipment"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Trusted medical devices and healthcare equipment designed for hospitals, clinics, and medical professionals."
+    />
+    <meta property="og:site_name" content="STACKLY" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- J-QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="font-primary">
+    <!-- CURSOR -->
+    <div class="cursor">
+      <div class="cursor-dot"></div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="re-loader" class="re-loader-wrap">
+      <div class="loader">
+        <svg
+          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlns="https://www.w3.org/2000/svg"
+          width="550"
+          height="210"
+          viewBox="0 0 550 210"
+        >
+          <path
+            d="m0,130.08h44.51c7.08-3.45,11.54-24.65,19.42-24.81s13.23,22.54,21.03,24.81c10.03,2.92,29.69-14.6,39.91-12.4,4.58.98,9.34,12.36,14.02,12.4,3.54.03,7.25-9.31,10.79-9.17,3.24.13,6.17,7.93,9.17,9.17s9.68-1.48,12.4,0c2.4,1.3,3.45,10.3,5.93,9.17,3.23-1.48,2.82-103.01,8.09-103.01,6.96,0,12.35,137.53,16.72,137.53,3.9,0-.09-36.61,8.49-43.69,3.41-2.81,13.69,1.93,17.66,0,7.17-3.49,11.72-24.71,19.69-25.08,8.62-.4,15.39,22.86,23.73,25.08,8.99,2.38,26.51-12.76,35.6-10.79,5.58,1.21,11.46,15.82,17.12,15.1,3.88-.49,4.87-12.59,8.76-12.94,3.01-.28,5.7,7.46,8.49,8.63s9.75-1.43,12.54,0,4.03,9.39,7.01,9.71c4.98.54,2.64-103.55,8.63-103.55,5.16,0,8.8,111.51,12.94,111.64,5.02.16,5.01-15.2,9.3-17.8s15.02,2.06,19.42,0c7.39-3.46,12.74-25.17,20.9-25.08,8.97.09,13.68,25.85,22.38,28.04,9.17,2.31,25.4-15.93,34.79-14.83,4.95.58,11.31,10.3,16.04,11.87h44.51"
+            stroke-linejoin="round"
+            stroke-width="2"
+            fill="none"
+            stroke="#2a8e9e"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- SITE CONTENT -->
+    <div>
+      <!-- NAVBAR & HOME -->
+      <div class="max-w-7xl mx-auto w-full relative overflow-hidden">
+        <!-- NAVBAR -->
+        <header
+          class="fixed top-0 left-0 right-0 max-w-7xl mx-auto w-full z-40 text-sm"
+        >
+          <!-- DESKTOP NAVBAR -->
+          <nav
+            aria-label="navbar"
+            id="navbar"
+            class="bg-white flex items-center justify-between px-6 md:px-12 py-3 md:py-4 text-white navbar shadow-md"
+          >
+            <div>
+              <a href="./index.html"
+                ><img src="../src/assets/logo.webp" alt="logo" class="h-8"
+              /></a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+              <!-- HOME DROPDOWN -->
+              <div class="relative">
+                <div class="flex items-center gap-1 font-medium text-primary">
+                  <a href="./index.html" class="nav-hover inline-block">
+                    <span class="nav-text">HOME</span>
+                  </a>
+
+                  <button id="homeToggle">
+                    <svg
+                      id="homeCaret"
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Dropdown -->
+                <div
+                  id="homeMenu"
+                  class="absolute left-0 mt-3 w-36 rounded-xl bg-white text-black backdrop-blur-xl border border-white/20 shadow-lg overflow-hidden hidden"
+                >
+                  <a
+                    href="../index.html"
+                    class="home-item block px-6 py-4 text-sm hover:bg-primary/10"
+                    >Home 1</a
+                  >
+                </div>
+              </div>
+
+              <a href="./about.html" class="nav-hover inline-block">
+                <span class="nav-text">ABOUT</span>
+              </a>
+              <a href="./services.html" class="nav-hover inline-block">
+                <span class="nav-text">SERVICES</span>
+              </a>
+              <a href="./product.html" class="nav-hover inline-block">
+                <span class="nav-text">PRODUCTS</span>
+              </a>
+              <a href="./contact.html" class="nav-hover inline-block">
+                <span class="nav-text">CONTACT</span>
+              </a>
+              <a href="./dashboard.html" class="nav-hover inline-block">
+                <span class="nav-text">DASHBOARD</span>
+              </a>
+            </div>
+
+            <div>
+              <div class="hidden xl:flex items-center gap-3 text-xl">
+                <a href="./404.html" class="hidden lg:flex items-center gap-3">
+                  <div
+                    class="call-icon w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="text-sm">
+                    <p class="font-medium">Get Consultation</p>
+                    <p class="text-gray-500">017-50050088</p>
+                  </div>
+                </a>
+
+                <a
+                  class="flex items-center gap-3 px-4 py-2.5 rounded-full bg-primary"
+                  href="./login.html"
+                >
+                  <div
+                    class="flex items-center justify-center text-primary bg-white rounded-full w-8 h-8"
+                  >
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+
+                  <div class="text-white font-medium">
+                    <p>Login</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- HAMBURGER ICON -->
+            <div class="text-2xl cursor-pointer ham-icon block xl:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+
+          <!-- MOBILE NAV -->
+          <div
+            class="fixed inset-0 w-full h-full bg-white flex flex-col gap-12 justify-center px-4 xsm:px-6 sm:px-12 md:px-20 z-40 transform -translate-y-full transition-transform duration-1000 text-xl sm:text-3xl font-bold mobile-menu"
+          >
+            <!-- HOME with sub menu -->
+            <div class="relative text-primary">
+              <div class="flex items-center gap-2 menu-link">
+                <a href="./index.html">HOME</a>
+
+                <button id="mobileHomeToggle">
+                  <i
+                    id="mobileCaret"
+                    class="fa-solid fa-chevron-down text-lg"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="mt-4 hidden absolute bg-white text-black rounded-lg z-40 w-40 px-6 py-6 text-2xl"
+                id="mobileHomeMenu"
+              >
+                <a class="block mobile-home-item mb-3" href="../index.html"
+                  >Home 2</a
+                >
+              </div>
+            </div>
+
+            <a class="menu-link" href="./about.html">ABOUT</a>
+            <a class="menu-link" href="./services.html">SERVICES</a>
+            <a class="menu-link" href="./product.html">PRODUCTS</a>
+            <a class="menu-link" href="./contact.html">CONTACT</a>
+            <a class="menu-link" href="./dashboard.html">DASHBOARD</a>
+            <a class="menu-link" href="./login.html">LOGIN</a>
+            <button
+              class="close-menu text-2xl cursor-pointer absolute top-12 right-3 xsm:right-6 md:right-12 p-4 border border-white/20 rounded-full"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <main
+          id="home"
+          class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 mt-32 overflow-hidden text-white home"
+        >
+          <div class="relative">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- img1 -->
+                <div class="swiper-slide">
+                  <img
+                    class="slide-image h-full w-full object-cover object-center md:object-[20%_20%] rounded-3xl hidden md:block"
+                    src="../src/assets/home11.webp"
+                    alt="home1"
+                  />
+
+                  <!-- contents -->
+                  <div
+                    class="absolute inset-0 z-10 p-3 md:pl-20 h-125 w-full flex flex-col items-start justify-center gap-6 bg-linear-to-b from-transparent to-primary/60 rounded-3xl"
+                  >
+                    <p class="z-30 slide-tag">Weekly 60% Off</p>
+                    <h1
+                      class="slide-title text-2xl md:text-5xl font-primary font-bold z-30 md:max-w-2xl"
+                    >
+                      Advanced Medical Equipment & Professional Healthcare
+                      Services
+                    </h1>
+                    <p class="slide-desc text-sm md:text-lg z-30 md:max-w-5xl">
+                      We are a trusted provider of premium medical equipment,
+                      healthcare supplies, and professional services designed to
+                      support patients, caregivers, and healthcare facilities.
+                      With years of experience, we combine quality products,
+                      clinical expertise.
+                    </p>
+                    <a
+                      class="slide-btn px-6 py-3 border border-white/50 z-30"
+                      href="./product.html"
+                      >View More</a
+                    >
+                  </div>
+                </div>
+                <!-- img2 -->
+                <div class="swiper-slide">
+                  <img
+                    class="slide-image h-full w-full object-cover object-center md:object-[20%_20%] rounded-3xl"
+                    src="../src/assets/home12.webp"
+                    alt="home2"
+                  />
+                  <!-- contents -->
+                  <div
+                    class="absolute inset-0 z-10 p-3 md:pl-20 h-125 flex flex-col items-start justify-center gap-6 bg-linear-to-b from-transparent to-primary/60 rounded-3xl"
+                  >
+                    <p class="z-30 slide-tag">Trusted Medical Solutions</p>
+                    <h1
+                      class="slide-title text-2xl md:text-5xl font-primary font-bold z-30 md:max-w-2xl"
+                    >
+                      Your Trusted Partner in Medical Equipment & Healthcare
+                      Services
+                    </h1>
+                    <p class="slide-desc text-sm md:text-lg z-30 md:max-w-5xl">
+                      Delivering certified medical devices, home-care solutions,
+                      and professional support for hospitals, clinics, and
+                      families.
+                    </p>
+                    <a
+                      class="slide-btn px-6 py-3 border border-white/50 z-30"
+                      href="./product.html"
+                      >View Products</a
+                    >
+                  </div>
+                </div>
+                <!-- img3 -->
+                <div class="swiper-slide">
+                  <img
+                    class="slide-image h-full w-full object-cover object-[70%_40%] md:object-[20%_20%] rounded-3xl"
+                    src="../src/assets/home14.webp"
+                    alt="home3"
+                  />
+                  <!-- contents -->
+                  <div
+                    class="absolute inset-0 z-10 p-3 md:pl-20 h-125 flex flex-col items-start justify-center gap-6 bg-linear-to-b from-black/30 to-primary/60 rounded-3xl"
+                  >
+                    <p class="z-30 slide-tag">Care & Comfort</p>
+                    <h1
+                      class="slide-title text-2xl md:text-5xl font-primary font-bold z-30 md:max-w-2xl"
+                    >
+                      Quality Medical Equipment for Health, Comfort & Care
+                    </h1>
+                    <p class="slide-desc text-sm md:text-lg z-30 md:max-w-5xl">
+                      Helping patients and families access reliable, easy-to-use
+                      medical devices at home or in healthcare facilities.
+                    </p>
+                    <a
+                      class="slide-btn px-6 py-3 border border-white/50 z-30"
+                      href="./product.html"
+                      >View Products</a
+                    >
+                  </div>
+                </div>
+                <!-- img4 -->
+                <div class="swiper-slide">
+                  <img
+                    class="slide-image h-full w-full object-cover object-center md:object-[20%_20%] rounded-3xl"
+                    src="../src/assets/home2.webp"
+                    alt="home4"
+                  />
+                  <!-- contents -->
+                  <div
+                    class="absolute inset-0 z-10 p-3 md:pl-20 h-125 flex flex-col items-start justify-center gap-6 bg-linear-to-b from-transparent to-primary/60 rounded-3xl"
+                  >
+                    <p class="slide-tag z-30">Medical Excellence</p>
+                    <h1
+                      class="slide-title text-2xl md:text-5xl font-primary font-bold z-30 md:max-w-2xl"
+                    >
+                      Top-Quality Medical Equipment & Home Healthcare Services
+                    </h1>
+                    <p class="slide-desc text-sm md:text-lg z-30 md:max-w-5xl">
+                      We supply a full range of hospital equipment, home-care
+                      devices, diagnostic tools, and disposable medical
+                      supplies.
+                    </p>
+                    <a
+                      class="slide-btn px-6 py-3 border border-white/50 z-30"
+                      href="./product.html"
+                      >View Products</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- BANNER -->
+      <section
+        class="bg-white max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-20 overflow-hidden"
+      >
+        <div class="mx-auto grid md:grid-cols-2 gap-8 promo-grid">
+          <!-- LEFT BANNER -->
+          <div class="promo-card left-card">
+            <div class="promo-text">
+              <span>FABRIC SURGICAL MASK</span>
+              <h3>Ply Surgical Mask<br />With Filter</h3>
+              <a href="./404.html" class="promo-btn">
+                <i class="fa-solid fa-bag-shopping"></i> SHOP NOW
+              </a>
+            </div>
+            <img
+              src="../src/assets/sub-banner-1.webp"
+              alt="sub1"
+              class="promo-img"
+            />
+          </div>
+
+          <!-- RIGHT BANNER -->
+          <div class="promo-card right-card">
+            <div class="promo-text">
+              <span>SMART CARE STETHOSCOPES</span>
+              <h3>Digital Stethoscope<br />For Doctors</h3>
+              <a href="./404.html" class="promo-btn">
+                <i class="fa-solid fa-bag-shopping"></i> SHOP NOW
+              </a>
+            </div>
+            <img
+              src="../src/assets/sub-banner-2.webp"
+              alt="sub2"
+              class="promo-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY -->
+      <section
+        class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 overflow-hidden mt-10"
+      >
+        <div class="mx-auto text-center">
+          <h2 class="text-4xl font-semibold mb-16">Popular Categories</h2>
+
+          <div
+            class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-10 categories-grid"
+          >
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-bandage relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Band Aid</h4>
+              <p class="text-sm text-gray-500">6 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-capsules relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Capsules</h4>
+              <p class="text-sm text-gray-500">16 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-tooth relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Tooth</h4>
+              <p class="text-sm text-gray-500">5 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-thermometer relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Thermometer</h4>
+              <p class="text-sm text-gray-500">10 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-head-side-mask relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Face Masks</h4>
+              <p class="text-sm text-gray-500">23 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-stethoscope relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Stethoscope</h4>
+              <p class="text-sm text-gray-500">19 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-kit-medical relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">First Aid Kit</h4>
+              <p class="text-sm text-gray-500">13 Items</p>
+            </div>
+            <div class="category-item text-center">
+              <a
+                href="./404.html"
+                class="icon-circle group relative isolate flex items-center justify-center overflow-hidden"
+              >
+                <i
+                  class="fa-solid fa-microscope relative z-10 transition-colors duration-300 group-hover:text-white"
+                ></i>
+
+                <!-- hover bg -->
+                <span
+                  class="absolute inset-0 bg-primary rounded-full scale-0 transition-transform duration-900 ease-out group-hover:scale-100"
+                ></span>
+              </a>
+
+              <h4 class="mt-3 font-semibold">Microscope</h4>
+              <p class="text-sm text-gray-500">7 Items</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section
+        class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 mt-32 overflow-hidden"
+      >
+        <div class="mx-auto">
+          <div class="flex items-center justify-between gap-8 flex-wrap mb-14">
+            <h2 class="text-3xl font-semibold text-center">Latest Products</h2>
+
+            <a
+              href="./404.html"
+              class="inline-flex items-center gap-4 bg-primary group hover-btn rounded-full px-6 py-3 w-fit"
+            >
+              <span class="text-white">View All</span>
+              <span
+                class="w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transform -rotate-45 group-hover:rotate-0 transition duration-500 ease-in-out"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+
+          <div class="relative overflow-hidden">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 latest-grid"
+            >
+              <!-- PRODUCT -->
+              <div class="product-card">
+                <img
+                  src="../src/assets/ear.webp"
+                  alt="oto"
+                  class="product-img"
+                />
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>SmartCheck Digital Ear Scope from Tylenol</h3>
+                <p class="price">$15.00</p>
+                <a href="./404.html" class="btn-secondary">ADD TO CART</a>
+              </div>
+
+              <div class="product-card">
+                <img
+                  src="../src/assets/mask.webp"
+                  alt="n95"
+                  class="product-img"
+                />
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Featured Status N95 Mask With Respirator Green Pack</h3>
+                <p class="price text-teal-500">$12.00</p>
+                <a href="./404.html" class="btn-secondary">ADD TO CART</a>
+              </div>
+
+              <div class="product-card sale">
+                <span class="badge">-5%</span>
+                <img
+                  src="../src/assets/temp1.webp"
+                  alt="temp"
+                  class="product-img"
+                />
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Forehead Temperature Gun CQR-T800 Thermometer</h3>
+                <p class="price"><span class="old">$22.00</span> $21.00</p>
+                <a href="./404.html" class="btn-secondary">ADD TO CART</a>
+              </div>
+
+              <div class="product-card sale">
+                <span class="badge">-17%</span>
+                <img
+                  src="../src/assets/sani.webp"
+                  alt="sanitizer"
+                  class="product-img"
+                />
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Austro Labs Swachh Hand Sanitizer Liquid Spray</h3>
+                <p class="price"><span class="old">$12.00</span> $10.00</p>
+                <a href="./404.html" class="btn-secondary">ADD TO CART</a>
+              </div>
+
+              <div class="product-card">
+                <img
+                  src="../src/assets/gloves.webp"
+                  alt="glove"
+                  class="product-img"
+                />
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Blue Disposable Nitrile Examination Gloves</h3>
+                <p class="price">$16.00</p>
+                <a href="./404.html" class="btn-secondary">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <section class="py-20 overflow-hidden">
+        <div
+          class="max-w-7xl px-6 lg:px-8 mx-auto overflow-hidden bg-primary text-white text-2xl py-12 marquee-root"
+        >
+          <div class="flex items-center gap-10 whitespace-nowrap marquee-track">
+            <!-- DUPLICATED CONTENT FOR SEAMLESS LOOP -->
+            <div class="flex items-center gap-10 marquee-content">
+              <span>Certified Medical Devices</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Patient Safety First</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Healthcare Innovation</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Clinical Precision Technology</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Advanced Diagnostic Solutions</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Reliable Healthcare Equipment</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Medical Research & Development</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Trusted Healthcare Support</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Smart Patient Monitoring</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Quality Healthcare Standards</span>
+            </div>
+
+            <div class="flex items-center gap-10 marquee-content">
+              <span>Certified Medical Devices</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Patient Safety First</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Healthcare Innovation</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Clinical Precision Technology</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Advanced Diagnostic Solutions</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Reliable Healthcare Equipment</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Medical Research & Development</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Trusted Healthcare Support</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Smart Patient Monitoring</span>
+              <i class="fa-solid fa-asterisk"></i>
+
+              <span>Quality Healthcare Standards</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POLICY -->
+      <section
+        class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-10 overflow-hidden"
+      >
+        <div
+          class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 trust-grid"
+        >
+          <div class="trust-item flex flex-col items-center">
+            <div class="trust-icon"><i class="fa-solid fa-right-left"></i></div>
+            <h3>14-Day Return</h3>
+            <div class="divider"></div>
+            <p>
+              Hassle-free returns within 14 days for unused and eligible
+              products.
+            </p>
+          </div>
+
+          <div class="trust-item flex flex-col items-center">
+            <div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Free Shipping</h3>
+            <div class="divider"></div>
+            <p>
+              Enjoy fast and free shipping on all eligible medical equipment
+              orders.
+            </p>
+          </div>
+
+          <div class="trust-item flex flex-col items-center">
+            <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+            <div class="divider"></div>
+            <p>
+              Our support team is available around the clock to assist you
+              anytime.
+            </p>
+          </div>
+
+          <div class="trust-item flex flex-col items-center">
+            <div class="trust-icon"><i class="fa-solid fa-user-tag"></i></div>
+            <h3>Member Discount</h3>
+            <div class="divider"></div>
+            <p>
+              Exclusive discounts and special offers available for registered
+              members.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAMS -->
+      <section
+        class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-10 overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <!-- Header -->
+          <div
+            class="grid lg:grid-cols-2 gap-8 md:gap-20 items-start mb-20 team-anim-header"
+          >
+            <div>
+              <span class="text-primary uppercase tracking-widest text-sm">
+                Meet Our Team
+              </span>
+
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mt-6 reveal-type"
+              >
+                Creative Minds Behind<br />
+                our Team.
+              </h2>
+            </div>
+
+            <div
+              class="grid md:grid-cols-2 items-end justify-between gap-5 h-full"
+            >
+              <p class="text-zinc-600 max-w-sm">
+                Our teams are customized to meet your unique ideas.
+              </p>
+
+              <a
+                href="./404.html"
+                class="inline-flex items-center gap-4 bg-primary group hover-btn rounded-full px-6 py-3 w-fit"
+              >
+                <span class="text-white">Contact Us</span>
+                <span
+                  class="w-10 h-10 flex items-center justify-center bg-white text-primary rounded-full transform -rotate-45 group-hover:rotate-0 transition duration-500 ease-in-out"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARDS -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 team-anim-cards">
+            <!-- CARD -->
+            <div
+              class="team-card bg-white rounded-2xl overflow-hidden group border border-gray-300 team-anim-card"
+            >
+              <div class="relative my-auto overflow-hidden">
+                <img
+                  src="../src/assets/doc1.webp"
+                  class="w-full h-80 object-cover transition"
+                  alt="team1"
+                />
+
+                <!-- PROFILE ICONS -->
+                <div
+                  class="absolute bottom-0 bg-primary/80 w-full h-16 my-auto rounded-t-2xl transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out"
+                >
+                  <div
+                    class="flex items-center justify-center gap-6 w-full h-full"
+                  >
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <h4 class="text-lg font-semibold">Eade Marren</h4>
+                <p class="text-zinc-400 text-sm">Chief Executive</p>
+              </div>
+            </div>
+
+            <div
+              class="team-card bg-white border border-gray-300 rounded-2xl overflow-hidden group team-anim-card"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="../src/assets/doc3.webp"
+                  class="w-full h-80 object-cover transition"
+                  alt="team2"
+                />
+
+                <!-- PROFILE ICONS -->
+                <div
+                  class="absolute bottom-0 bg-primary/80 w-full h-16 my-auto rounded-t-2xl transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out"
+                >
+                  <div
+                    class="flex items-center justify-center gap-6 w-full h-full"
+                  >
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <h4 class="text-lg font-semibold">Savannah Nqueen</h4>
+                <p class="text-zinc-400 text-sm">Operations Head</p>
+              </div>
+            </div>
+
+            <div
+              class="team-card bg-white border border-gray-300 rounded-2xl overflow-hidden group team-anim-card"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="../src/assets/doc2.webp"
+                  class="w-full h-80 object-cover transition"
+                  alt="team3"
+                />
+                <!-- PROFILE ICONS -->
+                <div
+                  class="absolute bottom-0 bg-primary/80 w-full h-16 my-auto rounded-t-2xl transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out"
+                >
+                  <div
+                    class="flex items-center justify-center gap-6 w-full h-full"
+                  >
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <h4 class="text-lg font-semibold">Cameron William</h4>
+                <p class="text-zinc-400 text-sm">Allergy Specialist</p>
+              </div>
+            </div>
+
+            <div
+              class="team-card bg-white border border-gray-300 rounded-2xl overflow-hidden group team-anim-card"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="../src/assets/doc4.webp"
+                  class="w-full h-80 object-cover object-top transition"
+                  alt="team4"
+                />
+                <!-- PROFILE ICONS -->
+                <div
+                  class="absolute bottom-0 bg-primary/80 w-full h-16 my-auto rounded-t-2xl transform translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out"
+                >
+                  <div
+                    class="flex items-center justify-center gap-6 w-full h-full"
+                  >
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                      href="./404.html"
+                      class="social-icon w-9 h-9 rounded-full bg-white text-primary flex items-center justify-center transition"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <h4 class="text-lg font-semibold">Olivia Fox</h4>
+                <p class="text-zinc-400 text-sm">Team Lead</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section
+        class="faq-section max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-20 overflow-hidden"
+      >
+        <div class="">
+          <!--  HEADER  -->
+          <div class="text-center mb-20">
+            <p
+              class="faq-label text-primary mb-4 flex justify-center items-center gap-2"
+            >
+              <i class="fa-solid fa-circle-question"></i> FAQ's
+            </p>
+
+            <h2
+              class="faq-title text-3xl md:text-4xl xl:text-5xl font-semibold mb-6"
+            >
+              Frequently Asked Questions.
+            </h2>
+
+            <p class="faq-desc text-gray-500 max-w-2xl mx-auto">
+              Find clear answers to common questions regarding our real estate
+              services, construction projects, timelines, and design solutions.
+            </p>
+          </div>
+
+          <!-- ===== FAQ GRID ===== -->
+          <div class="grid lg:grid-cols-2 gap-6">
+            <div class="faq-grid flex flex-col gap-6">
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>What services do you provide?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Everything you need to know about our certified medical
+                    devices, shipping, safety standards, and support services.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Are your medical devices certified and approved?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    All medical devices available on our platform meet
+                    recognized healthcare quality standards and comply with
+                    applicable regulatory guidelines.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span
+                    >Can I use these devices at home without professional
+                    assistance?</span
+                  >
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Many of our medical devices are designed for safe home use,
+                    such as monitoring equipment and basic healthcare tools.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Do you provide warranty on medical equipment?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Yes. Most medical devices include manufacturer warranty
+                    coverage. Warranty terms vary depending on the product type
+                    and brand. Full warranty details are available on each
+                    product page.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span
+                    >Is a prescription required to purchase medical
+                    devices?</span
+                  >
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Some specialized medical equipment may require a valid
+                    prescription depending on regulatory requirements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Can I return or replace a medical device?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Yes. Returns and replacements are available based on our
+                    return policy. Items must remain unused, undamaged, and in
+                    original packaging unless defective.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-full rounded-2xl">
+              <img
+                class="object-cover h-full rounded-2xl"
+                src="../src/assets/about.webp"
+                alt="faq"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="stackly-footer max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 pt-16 overflow-hidden"
+      >
+        <div class="">
+          <!-- GRID -->
+          <div
+            class="footer-grid grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
+          >
+            <!-- ABOUT -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                About Us
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li><a href="./index.html" class="footer-link">Home</a></li>
+                <li>
+                  <a href="./about.html" class="footer-link">About Us</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="footer-link">Services</a>
+                </li>
+                <li>
+                  <a href="./product.html" class="footer-link">Products</a>
+                </li>
+                <li>
+                  <a href="./dashboard.html" class="footer-link">Dashboard</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Terms and Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="footer-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Categories
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Vitamins & Supplements</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Personal Care & Beauty</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Medicines</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Health & First Aids</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Weight Loss & Fitness</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Mum & Baby</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Organic & Gluten Free</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- CUSTOMER CARE -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Customer Care
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li>
+                  <a href="./404.html" class="footer-link">My Account</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">My Orders</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Track Your Order</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Wishlist</a>
+                </li>
+                <li><a href="./404.html" class="footer-link">FAQs</a></li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Refunds/Return Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- STORE LOCATIONS -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Store Locations
+              </h3>
+
+              <div class="space-y-6 text-gray-600">
+                <div>
+                  <p>9863 - 9867 Mill Road,<br />Cambridge, MG09 99HT</p>
+                  <a href="./404.html" class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+
+                <div>
+                  <p>9870 St Vincent Place,<br />Glasgow, DC 45 Fr 45</p>
+                  <a href="./404.html" class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+
+                <div>
+                  <p>8901 Marmora Road,<br />Glasgow, D04 89GR</p>
+                  <a href="./404.html" class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- CUSTOMER SUPPORT -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Customer Support
+              </h3>
+
+              <div class="space-y-6 text-gray-600">
+                <!-- phone -->
+                <a href="./404.html" class="flex items-center gap-4">
+                  <div>
+                    <div class="text-3xl text-primary">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">24/7 Customer Service</p>
+                    <p class="font-semibold text-gray-900">
+                      +1 800 559 6580 <br />
+                      +1 800 559 6588
+                    </p>
+                  </div>
+                </a>
+
+                <!-- email -->
+                <a href="./404.html" class="flex items-center gap-4">
+                  <div>
+                    <div class="text-3xl text-primary">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p class="text-sm text-gray-500">Email Us:</p>
+                    <p class="font-semibold text-gray-900">info@stackly.com</p>
+                  </div>
+                </a>
+
+                <!-- social -->
+                <div
+                  class="footer-socials flex gap-5 pt-2 text-gray-500 text-xl"
+                >
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div
+          class="footer-copy text-center text-gray-400 mt-6 py-6 border-t border-gray-300"
+        >
+          Copyright © <span id="year"></span> Stackly. All Rights Reserved.
+        </div>
+      </footer>
+
+      <!-- SCROLL TO TOP -->
+      <button
+        class="scroll-top-btn fixed bottom-5 right-5 z-50 opacity-0 cursor-pointer"
+      >
+        <!-- progress circle -->
+        <svg class="scroll-progress w-15 h-15 -rotate-90">
+          <circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke-width="2"
+            class="progress-bg fill-none stroke-gray-200"
+          />
+
+          <circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke-width="4"
+            class="progress-ring fill-none stroke-primary"
+          />
+        </svg>
+
+        <!-- arrow -->
+        <div
+          class="scroll-icon absolute inset-0 flex items-center justify-center"
+        >
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </button>
+    </div>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>

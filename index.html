@@ -1,0 +1,1413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STACKLY | Advanced Medical Devices & Healthcare Equipment</title>
+    <meta
+      name="title"
+      content="STACKLY | Advanced Medical Devices & Healthcare Equipment"
+    />
+    <meta
+      name="description"
+      content="Trusted medical devices and healthcare equipment designed for hospitals, clinics, and medical professionals."
+    />
+    <meta
+      name="keywords"
+      content="medical devices, healthcare equipment, diagnostic devices, hospital equipment, medical technology, surgical equipment, healthcare solutions"
+    />
+    <meta name="author" content="STACKLY" />
+
+    <meta
+      property="og:title"
+      content="STACKLY | Advanced Medical Devices & Healthcare Equipment"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Trusted medical devices and healthcare equipment designed for hospitals, clinics, and medical professionals."
+    />
+    <meta property="og:site_name" content="STACKLY" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- J-QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-primary">
+    <!-- CURSOR -->
+    <div class="cursor">
+      <div class="cursor-dot"></div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="re-loader" class="re-loader-wrap">
+      <div class="loader">
+        <svg
+          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlns="https://www.w3.org/2000/svg"
+          width="550"
+          height="210"
+          viewBox="0 0 550 210"
+        >
+          <path
+            d="m0,130.08h44.51c7.08-3.45,11.54-24.65,19.42-24.81s13.23,22.54,21.03,24.81c10.03,2.92,29.69-14.6,39.91-12.4,4.58.98,9.34,12.36,14.02,12.4,3.54.03,7.25-9.31,10.79-9.17,3.24.13,6.17,7.93,9.17,9.17s9.68-1.48,12.4,0c2.4,1.3,3.45,10.3,5.93,9.17,3.23-1.48,2.82-103.01,8.09-103.01,6.96,0,12.35,137.53,16.72,137.53,3.9,0-.09-36.61,8.49-43.69,3.41-2.81,13.69,1.93,17.66,0,7.17-3.49,11.72-24.71,19.69-25.08,8.62-.4,15.39,22.86,23.73,25.08,8.99,2.38,26.51-12.76,35.6-10.79,5.58,1.21,11.46,15.82,17.12,15.1,3.88-.49,4.87-12.59,8.76-12.94,3.01-.28,5.7,7.46,8.49,8.63s9.75-1.43,12.54,0,4.03,9.39,7.01,9.71c4.98.54,2.64-103.55,8.63-103.55,5.16,0,8.8,111.51,12.94,111.64,5.02.16,5.01-15.2,9.3-17.8s15.02,2.06,19.42,0c7.39-3.46,12.74-25.17,20.9-25.08,8.97.09,13.68,25.85,22.38,28.04,9.17,2.31,25.4-15.93,34.79-14.83,4.95.58,11.31,10.3,16.04,11.87h44.51"
+            stroke-linejoin="round"
+            stroke-width="2"
+            fill="none"
+            stroke="#2a8e9e"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- SITE CONTENT -->
+    <div>
+      <!-- NAVBAR & HOME -->
+      <div class="max-w-7xl mx-auto w-full relative overflow-hidden">
+        <!-- NAVBAR -->
+        <header
+          class="fixed top-0 left-0 right-0 max-w-7xl mx-auto w-full z-40 text-sm"
+        >
+          <!-- DESKTOP NAVBAR -->
+          <nav
+            aria-label="navbar"
+            id="navbar"
+            class="bg-white flex items-center justify-between px-6 md:px-12 py-3 md:py-4 text-white navbar shadow-md"
+          >
+            <div>
+              <a href="./index.html"
+                ><img src="./src/assets/logo.webp" alt="logo" class="h-8"
+              /></a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+              <!-- HOME DROPDOWN -->
+              <div class="relative">
+                <div class="flex items-center gap-1 font-medium text-primary">
+                  <a href="./index.html" class="nav-hover inline-block">
+                    <span class="nav-text">HOME</span>
+                  </a>
+
+                  <button id="homeToggle">
+                    <svg
+                      id="homeCaret"
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Dropdown -->
+                <div
+                  id="homeMenu"
+                  class="absolute left-0 mt-3 w-36 rounded-xl bg-white text-black backdrop-blur-xl border border-white/20 shadow-lg overflow-hidden hidden"
+                >
+                  <a
+                    href="./home/index.html"
+                    class="home-item block px-6 py-4 text-sm hover:bg-primary/10"
+                    >Home 2</a
+                  >
+                </div>
+              </div>
+
+              <a href="./pages/about.html" class="nav-hover inline-block">
+                <span class="nav-text">ABOUT</span>
+              </a>
+              <a href="./pages/services.html" class="nav-hover inline-block">
+                <span class="nav-text">SERVICES</span>
+              </a>
+              <a href="./pages/product.html" class="nav-hover inline-block">
+                <span class="nav-text">PRODUCTS</span>
+              </a>
+              <a href="./pages/contact.html" class="nav-hover inline-block">
+                <span class="nav-text">CONTACT</span>
+              </a>
+              <a href="./pages/dashboard.html" class="nav-hover inline-block">
+                <span class="nav-text">DASHBOARD</span>
+              </a>
+            </div>
+
+            <div>
+              <div class="hidden xl:flex items-center gap-3 text-xl">
+                <a
+                  href="./pages/404.html"
+                  class="hidden lg:flex items-center gap-3"
+                >
+                  <div
+                    class="call-icon w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="text-sm">
+                    <p class="font-medium">Get Consultation</p>
+                    <p class="text-gray-500">017-50050088</p>
+                  </div>
+                </a>
+
+                <a
+                  class="flex items-center gap-3 px-4 py-2.5 rounded-full bg-primary"
+                  href="./pages/login.html"
+                >
+                  <div
+                    class="flex items-center justify-center text-primary bg-white rounded-full w-8 h-8"
+                  >
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+
+                  <div class="text-white font-medium">
+                    <p>Login</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- HAMBURGER ICON -->
+            <div class="text-2xl cursor-pointer ham-icon block xl:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+
+          <!-- MOBILE NAV -->
+          <div
+            class="fixed inset-0 w-full h-full bg-white flex flex-col gap-12 justify-center px-4 xsm:px-6 sm:px-12 md:px-20 z-40 transform -translate-y-full transition-transform duration-1000 text-xl sm:text-3xl font-bold mobile-menu"
+          >
+            <!-- HOME with sub menu -->
+            <div class="relative text-primary">
+              <div class="flex items-center gap-2 menu-link">
+                <a href="./index.html">HOME</a>
+
+                <button id="mobileHomeToggle">
+                  <i
+                    id="mobileCaret"
+                    class="fa-solid fa-chevron-down text-lg"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="mt-4 hidden absolute bg-white text-black rounded-lg z-40 w-40 px-6 py-6 text-2xl"
+                id="mobileHomeMenu"
+              >
+                <a class="block mobile-home-item mb-3" href="./home/index.html"
+                  >Home 2</a
+                >
+              </div>
+            </div>
+
+            <a class="menu-link" href="./pages/about.html">ABOUT</a>
+            <a class="menu-link" href="./pages/services.html">SERVICES</a>
+            <a class="menu-link" href="./pages/product.html">PRODUCTS</a>
+            <a class="menu-link" href="./pages/contact.html">CONTACT</a>
+            <a class="menu-link" href="./pages/dashboard.html">DASHBOARD</a>
+            <a class="menu-link" href="./pages/login.html">LOGIN</a>
+            <button
+              class="close-menu text-2xl cursor-pointer absolute top-12 right-3 xsm:right-6 md:right-12 p-4 border border-white/20 rounded-full"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <main
+          id="home"
+          class="stackly-hero relative max-w-7xl mx-auto my-24 overflow-hidden rounded-3xl"
+        >
+          <!-- BG IMAGE -->
+          <img
+            src="./src/assets/home2.webp"
+            alt="hero-bg"
+            class="hero-bg brightness-75 absolute inset-0 z-[-1] w-full h-full object-cover"
+          />
+          <!-- OVERLAY -->
+          <div
+            class="absolute inset-0 bg-linear-to-b from-black/70 to-primary/80 opacity-70 z-[-1]"
+          ></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 py-8 overflow-hidden">
+            <!-- PANEL -->
+            <div
+              class="text-white p-4 md:p-16 flex flex-col justify-center space-y-6 lg:col-span-2"
+            >
+              <div
+                class="hero-tag flex items-center gap-4 text-teal-300 font-semibold tracking-wide"
+              >
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                  <span>STACKLY MEDICAL DEVICES</span>
+                </div>
+              </div>
+
+              <h1
+                class="hero-title text-3xl md:text-4xl xl:text-5xl font-extrabold leading-tight"
+              >
+                Advanced Devices<br />
+                For Better <span class="text-teal-300">Healthcare</span>
+              </h1>
+
+              <p class="hero-desc text-gray-100 max-w-lg text-lg">
+                Stackly delivers certified medical devices designed for
+                accuracy, safety, and reliable patient care. Trusted by
+                hospitals and healthcare professionals worldwide.
+              </p>
+
+              <a
+                href="./pages/product.html"
+                class="hero-cta w-fit mt-6 bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold"
+              >
+                Explore Medical Devices
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- PRIORITY -->
+      <section
+        class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-12 overflow-hidden"
+      >
+        <div class="mx-auto">
+          <div class="bg-white rounded-3xl px-4 py-10 lg:p-8 priority-card">
+            <!-- Header -->
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-16">
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-[#0a2a36] priority-title reveal-type"
+              >
+                Our Only Priority Is To Keep You Healthy
+              </h2>
+
+              <p class="text-gray-500 text-lg leading-relaxed priority-text">
+                From advanced medical devices to essential healthcare supplies,
+                we help medical professionals deliver safe, efficient, and
+                high-quality patient care.
+              </p>
+            </div>
+
+            <!-- Stats -->
+            <div
+              class="grid sm:grid-cols-2 xl:grid-cols-4 gap-12 priority-stats"
+            >
+              <div class="stat-item">
+                <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                <div>
+                  <h3 class="stat-num" data-target="15">15</h3>
+                  <p>Years Experience</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="icon-box">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div>
+                  <h3 class="stat-num" data-target="9862">9862</h3>
+                  <p>Finished Works</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                <div>
+                  <h3 class="stat-num" data-target="6534">6534</h3>
+                  <p>Global Brands</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="icon-box"><i class="fa-solid fa-heart"></i></div>
+                <div>
+                  <h3 class="stat-num" data-target="2560">2560</h3>
+                  <p>Satisfied Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO THUMBNAIL -->
+      <section class="py-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative video-thumb-root">
+          <img
+            src="./src/assets/home1.webp"
+            class="rounded-3xl w-full h-96 object-cover brightness-75"
+            alt="vid"
+          />
+
+          <button
+            class="play-btn absolute inset-0 m-auto w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center transition video-open-btn"
+            aria-label="Play video"
+          >
+            <i class="fa-solid fa-play text-2xl"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- PROMO -->
+      <section
+        class="med-section max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 overflow-hidden"
+      >
+        <!-- GRID -->
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <!-- CARD 1 -->
+          <div
+            class="med-card relative rounded-xl overflow-hidden p-3 md:p-10 min-h-55 shadow-md shadow-gray-50"
+          >
+            <div
+              class="med-content space-y-2 max-w-50 h-full flex flex-col justify-center md:justify-start"
+            >
+              <p class="text-gray-500 text-sm">Super Sale</p>
+              <h3 class="text-2xl font-semibold text-gray-900">
+                New Collection
+              </h3>
+
+              <a
+                href="./pages/product.html"
+                class="med-link text-primary text-sm font-semibold flex items-center gap-2"
+              >
+                Shop Now <i class="fa-solid fa-plus text-xs"></i>
+              </a>
+            </div>
+
+            <img
+              src="./src/assets/promo7.webp"
+              alt="promo"
+              class="med-product absolute inset-0 w-full h-full z-[-1] object-cover"
+            />
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="med-card relative rounded-xl overflow-hidden p-3 md:p-10 min-h-55 shadow-md shadow-gray-50"
+          >
+            <div
+              class="med-content space-y-2 max-w-50 h-full flex flex-col justify-center md:justify-start"
+            >
+              <p class="text-gray-500 text-sm">Gun Covid-19</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Temperature</h3>
+
+              <a
+                href="./pages/product.html"
+                class="med-link text-primary text-sm font-semibold flex items-center gap-2"
+              >
+                Shop Now <i class="fa-solid fa-plus text-xs"></i>
+              </a>
+            </div>
+
+            <img
+              src="./src/assets/promo1.webp"
+              alt="promo"
+              class="med-product absolute inset-0 w-full h-full z-[-1] object-cover"
+            />
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="med-card relative rounded-xl overflow-hidden p-3 md:p-10 min-h-55 shadow-md shadow-gray-50"
+          >
+            <div
+              class="med-content space-y-2 max-w-50 h-full flex flex-col justify-center md:justify-start"
+            >
+              <p class="text-gray-500 text-sm">Pulse</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Oximeter</h3>
+
+              <a
+                href="./pages/product.html"
+                class="med-link text-primary text-sm font-semibold flex items-center gap-2"
+              >
+                Shop Now <i class="fa-solid fa-plus text-xs"></i>
+              </a>
+            </div>
+
+            <img
+              src="./src/assets/promo3.webp"
+              alt="promo"
+              class="med-product absolute inset-0 w-full h-full z-[-1] object-cover"
+            />
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="med-card relative rounded-xl overflow-hidden p-3 md:p-10 xl:col-span-2 min-h-65 shadow-md shadow-gray-50"
+          >
+            <div
+              class="med-content space-y-2 max-w-70 h-full flex flex-col justify-center md:justify-start"
+            >
+              <p class="text-gray-500 text-sm">Pulse Oximeter</p>
+              <h3 class="text-3xl font-semibold text-gray-900">Oxygen Mask</h3>
+
+              <a
+                href="./pages/product.html"
+                class="med-link text-primary text-sm font-semibold flex items-center gap-2"
+              >
+                Shop Now <i class="fa-solid fa-plus text-xs"></i>
+              </a>
+            </div>
+
+            <img
+              src="./src/assets/promo6.webp"
+              alt="promo"
+              class="med-product absolute inset-0 w-full h-full z-[-1] object-cover"
+            />
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            class="med-card relative rounded-xl overflow-hidden p-3 md:p-10 min-h-65 shadow-md shadow-gray-50"
+          >
+            <div
+              class="med-content space-y-2 max-w-50 h-full flex flex-col justify-center md:justify-start"
+            >
+              <p class="text-gray-500 text-sm">Digital Hearing</p>
+              <h3 class="text-3xl font-semibold text-gray-900">Amplifier</h3>
+
+              <a
+                href="./pages/product.html"
+                class="med-link text-primary text-sm font-semibold flex items-center gap-2"
+              >
+                Shop Now <i class="fa-solid fa-plus text-xs"></i>
+              </a>
+            </div>
+
+            <img
+              src="./src/assets/promo5.webp"
+              alt="promo"
+              class="med-product absolute inset-0 w-full h-full z-[-1] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section
+        class="stackly-services max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-16 overflow-hidden"
+      >
+        <div class="bg-[#0b3a4d] rounded-2xl px-10 py-16">
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10"
+          >
+            <!-- ITEM -->
+            <div
+              class="service-item flex items-center gap-5 py-6 md:py-0 md:px-6"
+            >
+              <div
+                class="service-icon w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center text-white text-xl transition-all duration-300"
+              >
+                <i class="fa-solid fa-truck"></i>
+              </div>
+
+              <div>
+                <h4 class="text-white font-semibold">Free Delivery</h4>
+                <p class="text-white/70 text-sm">Orders Over $120</p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="service-item flex items-center gap-5 py-6 md:py-0 md:px-6"
+            >
+              <div
+                class="service-icon w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center text-white text-xl transition-all duration-300"
+              >
+                <i class="fa-solid fa-rotate"></i>
+              </div>
+
+              <div>
+                <h4 class="text-white font-semibold">Get Refund</h4>
+                <p class="text-white/70 text-sm">Within 30 Days Returns</p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="service-item flex items-center gap-5 py-6 md:py-0 md:px-6"
+            >
+              <div
+                class="service-icon w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center text-white text-xl transition-all duration-300"
+              >
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+
+              <div>
+                <h4 class="text-white font-semibold">Safe Payment</h4>
+                <p class="text-white/70 text-sm">100% Secure Payment</p>
+              </div>
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="service-item flex items-center gap-5 py-6 md:py-0 md:px-6"
+            >
+              <div
+                class="service-icon w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center text-white text-xl transition-all duration-300"
+              >
+                <i class="fa-solid fa-headset"></i>
+              </div>
+
+              <div>
+                <h4 class="text-white font-semibold">24/7 Support</h4>
+                <p class="text-white/70 text-sm">Feel Free To Call Us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section
+        class="stackly-categories max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 overflow-hidden"
+      >
+        <!-- header -->
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-2xl font-semibold text-gray-900">Top Category</h2>
+          <a
+            href="./pages/404.html"
+            class="text-teal-600 text-sm flex items-center gap-2"
+          >
+            View More <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        <!-- category container -->
+        <div
+          id="categoryContainer"
+          class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+        ></div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section
+        class="stackly-best max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-20 overflow-hidden"
+      >
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-10">
+          <div class="flex items-center gap-6">
+            <h2 class="text-2xl font-semibold text-gray-900">Best Sellers</h2>
+          </div>
+          <div>
+            <a
+              href="./pages/product.html"
+              class="text-gray-500 text-sm flex items-center gap-1"
+            >
+              View All
+            </a>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <!-- Promo Card -->
+          <div
+            class="bs-promo relative rounded-2xl p-8 flex flex-col justify-between min-h-120 text-white overflow-hidden"
+          >
+            <div>
+              <h3 class="text-2xl font-semibold leading-tight">
+                Targeted Support
+              </h3>
+              <p class="mt-2 text-white/80">For Your Immune System</p>
+            </div>
+
+            <img
+              src="./src/assets/promo10.webp"
+              alt="Immune support supplement bottles"
+              class="absolute inset-0 object-cover h-full w-full z-[-1] mx-auto"
+            />
+
+            <div>
+              <p class="text-sm text-black">From $3.99</p>
+              <a
+                href="./pages/404.html"
+                class="bs-promo-btn mt-4 bg-primary text-white px-6 py-3 rounded-full inline-block"
+              >
+                View Range
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 1 -->
+          <div class="bs-card bg-white border border-gray-200 rounded-2xl p-6">
+            <img
+              src="./src/assets/nebu.webp"
+              alt="product"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">Daily Essentials</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Nebulizer
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$9.99</span>
+              <span class="text-gray-400 line-through ml-2">$14.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-green-500 rounded w-3/4"></div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="bs-card bg-white border border-gray-200 rounded-2xl p-6 relative"
+          >
+            <span
+              class="absolute top-4 right-4 bg-primary text-white text-xs px-3 py-1 rounded-full"
+            >
+              10% off
+            </span>
+            <img
+              src="./src/assets/mask.webp"
+              alt="Disposable medical face mask pack"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">COVID-19 Essentials</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Disposable Face Masks X 5
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$19.99</span>
+              <span class="text-gray-400 line-through ml-2">$24.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-yellow-500 rounded w-1/2"></div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="bs-card bg-white border border-gray-200 rounded-2xl p-6 relative"
+          >
+            <span
+              class="absolute top-4 right-4 bg-primary text-white text-xs px-3 py-1 rounded-full"
+            >
+              New
+            </span>
+
+            <img
+              src="./src/assets/pulse.webp"
+              alt="pulse"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">Oxygen level</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Pulse Oximeter
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$6.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-red-500 rounded w-1/4"></div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="bs-card bg-white border border-gray-200 rounded-2xl p-6">
+            <img
+              src="./src/assets/temp1.webp"
+              alt="Thermometer"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">COVID-19 Essentials</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Digital Thermometer
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$9.99</span>
+              <span class="text-gray-400 line-through ml-2">$14.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-green-500 rounded w-3/4"></div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="bs-card bg-white border border-gray-200 rounded-2xl p-6">
+            <img
+              src="./src/assets/gloves.webp"
+              alt="Disposable Gloves"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">COVID-19 Essentials</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Disposable Gloves X 50
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$19.99</span>
+              <span class="text-gray-400 line-through ml-2">$24.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-yellow-500 rounded w-1/2"></div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div
+            class="bs-card bg-white border border-gray-200 rounded-2xl p-6 relative"
+          >
+            <span
+              class="absolute top-4 right-4 bg-primary text-white text-xs px-3 py-1 rounded-full"
+            >
+              New
+            </span>
+
+            <img
+              src="./src/assets/ecg.webp"
+              alt="ecg"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">Essentials</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Portable ECG
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$6.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-red-500 rounded w-1/4"></div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div
+            class="bs-card bg-white border border-gray-200 rounded-2xl p-6 relative"
+          >
+            <span
+              class="absolute top-4 right-4 bg-primary text-white text-xs px-3 py-1 rounded-full"
+            >
+              New
+            </span>
+
+            <img
+              src="./src/assets/bp.webp"
+              alt="blood pressure"
+              class="bs-img h-72 mx-auto object-contain transition-all duration-300"
+            />
+
+            <p class="text-xs text-gray-400 mt-4">Monitor</p>
+
+            <h4 class="font-semibold text-gray-900 mt-1 leading-snug">
+              Portable BP
+            </h4>
+
+            <div class="text-yellow-400 text-sm mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="mt-2">
+              <span class="text-green-600 font-semibold">$18.99</span>
+            </div>
+
+            <div class="flex justify-between items-center mt-4">
+              <span class="text-xs text-gray-400">Stock Level</span>
+              <a href="./pages/404.html"
+                ><i class="fa-solid fa-bag-shopping text-gray-400"></i
+              ></a>
+            </div>
+
+            <div class="w-full h-2 bg-gray-200 rounded mt-2">
+              <div class="h-2 bg-red-500 rounded w-1/4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section
+        class="faq-section max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 overflow-hidden"
+      >
+        <div class="">
+          <!--  HEADER  -->
+          <div class="text-center mb-20">
+            <p
+              class="faq-label text-primary mb-4 flex justify-center items-center gap-2"
+            >
+              <i class="fa-solid fa-circle-question"></i> FAQ's
+            </p>
+
+            <h2
+              class="faq-title text-3xl md:text-4xl xl:text-5xl font-semibold mb-6"
+            >
+              Frequently Asked Questions.
+            </h2>
+
+            <p class="faq-desc text-gray-500 max-w-2xl mx-auto">
+              Find clear answers to common questions regarding our real estate
+              services, construction projects, timelines, and design solutions.
+            </p>
+          </div>
+
+          <!-- ===== FAQ GRID ===== -->
+          <div class="grid lg:grid-cols-2 gap-6">
+            <div class="faq-grid flex flex-col gap-6">
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>What services do you provide?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Everything you need to know about our certified medical
+                    devices, shipping, safety standards, and support services.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Are your medical devices certified and approved?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    All medical devices available on our platform meet
+                    recognized healthcare quality standards and comply with
+                    applicable regulatory guidelines.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span
+                    >Can I use these devices at home without professional
+                    assistance?</span
+                  >
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Many of our medical devices are designed for safe home use,
+                    such as monitoring equipment and basic healthcare tools.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Do you provide warranty on medical equipment?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Yes. Most medical devices include manufacturer warranty
+                    coverage. Warranty terms vary depending on the product type
+                    and brand. Full warranty details are available on each
+                    product page.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span
+                    >Is a prescription required to purchase medical
+                    devices?</span
+                  >
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Some specialized medical equipment may require a valid
+                    prescription depending on regulatory requirements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Can I return or replace a medical device?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Yes. Returns and replacements are available based on our
+                    return policy. Items must remain unused, undamaged, and in
+                    original packaging unless defective.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-full rounded-2xl">
+              <img
+                class="object-cover h-full rounded-2xl"
+                src="./src/assets/about.webp"
+                alt="faq"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="stackly-footer max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 pt-16 overflow-hidden"
+      >
+        <div class="">
+          <!-- GRID -->
+          <div
+            class="footer-grid grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
+          >
+            <!-- ABOUT -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                About Us
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li><a href="./index.html" class="footer-link">Home</a></li>
+                <li>
+                  <a href="./pages/about.html" class="footer-link">About Us</a>
+                </li>
+                <li>
+                  <a href="./pages/services.html" class="footer-link">Services</a>
+                </li>
+                <li>
+                  <a href="./pages/product.html" class="footer-link">Products</a>
+                </li>
+                <li>
+                  <a href="./pages/dashboard.html" class="footer-link">Dashboard</a>
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Terms and Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/contact.html" class="footer-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Categories
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Vitamins & Supplements</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Personal Care & Beauty</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link">Medicines</a>
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Health & First Aids</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Weight Loss & Fitness</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link">Mum & Baby</a>
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Organic & Gluten Free</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- CUSTOMER CARE -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Customer Care
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li>
+                  <a href="./pages/404.html" class="footer-link">My Account</a>
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link">My Orders</a>
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Track Your Order</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link">Wishlist</a>
+                </li>
+                <li><a href="./pages/404.html" class="footer-link">FAQs</a></li>
+                <li>
+                  <a href="./pages/404.html" class="footer-link"
+                    >Refunds/Return Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- STORE LOCATIONS -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Store Locations
+              </h3>
+
+              <div class="space-y-6 text-gray-600">
+                <div>
+                  <p>9863 - 9867 Mill Road,<br />Cambridge, MG09 99HT</p>
+                  <a
+                    href="./pages/404.html"
+                    class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+
+                <div>
+                  <p>9870 St Vincent Place,<br />Glasgow, DC 45 Fr 45</p>
+                  <a
+                    href="./pages/404.html"
+                    class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+
+                <div>
+                  <p>8901 Marmora Road,<br />Glasgow, D04 89GR</p>
+                  <a
+                    href="./pages/404.html"
+                    class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- CUSTOMER SUPPORT -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Customer Support
+              </h3>
+
+              <div class="space-y-6 text-gray-600">
+                <!-- phone -->
+                <a href="./pages/404.html" class="flex items-center gap-4">
+                  <div>
+                    <div class="text-3xl text-primary">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">24/7 Customer Service</p>
+                    <p class="font-semibold text-gray-900">
+                      +1 800 559 6580 <br />
+                      +1 800 559 6588
+                    </p>
+                  </div>
+                </a>
+
+                <!-- email -->
+                <a href="./pages/404.html" class="flex items-center gap-4">
+                  <div>
+                    <div class="text-3xl text-primary">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p class="text-sm text-gray-500">Email Us:</p>
+                    <p class="font-semibold text-gray-900">info@stackly.com</p>
+                  </div>
+                </a>
+
+                <!-- social -->
+                <div
+                  class="footer-socials flex gap-5 pt-2 text-gray-500 text-xl"
+                >
+                  <a href="./pages/404.html" class="footer-social"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./pages/404.html" class="footer-social"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="./pages/404.html" class="footer-social"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./pages/404.html" class="footer-social"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="./pages/404.html" class="footer-social"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div
+          class="footer-copy text-center text-gray-400 mt-6 py-6 border-t border-gray-300"
+        >
+          Copyright © <span id="year"></span> Stackly. All Rights Reserved.
+        </div>
+      </footer>
+
+      <!-- SCROLL TO TOP -->
+      <button
+        class="scroll-top-btn fixed bottom-5 right-5 z-50 opacity-0 cursor-pointer"
+      >
+        <!-- progress circle -->
+        <svg class="scroll-progress w-15 h-15 -rotate-90">
+          <circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke-width="2"
+            class="progress-bg fill-none stroke-gray-200"
+          />
+
+          <circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke-width="4"
+            class="progress-ring fill-none stroke-primary"
+          />
+        </svg>
+
+        <!-- arrow -->
+        <div
+          class="scroll-icon absolute inset-0 flex items-center justify-center"
+        >
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </button>
+
+      <!-- MODAL -->
+      <div
+        class="max-w-7xl px-3 mx-auto fixed inset-0 z-50 video-modal-root flex items-center justify-center"
+      >
+        <div class="absolute inset-0 bg-white/95 video-overlay">
+          <button
+            class="close-btn absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center transition video-close-btn"
+            aria-label="Close video"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="relative max-w-4xl w-full px-6 video-modal-box">
+          <div
+            class="relative bg-black rounded-2xl overflow-hidden aspect-video"
+          >
+            <div class="w-full h-full video-frame-slot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>

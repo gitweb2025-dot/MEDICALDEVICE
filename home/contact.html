@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STACKLY | Contact</title>
+    <meta name="title" content="STACKLY | Contact" />
+    <meta
+      name="description"
+      content="Trusted medical devices and healthcare equipment designed for hospitals, clinics, and medical professionals."
+    />
+    <meta
+      name="keywords"
+      content="medical devices, healthcare equipment, diagnostic devices, hospital equipment, medical technology, surgical equipment, healthcare solutions"
+    />
+    <meta name="author" content="STACKLY" />
+
+    <meta property="og:title" content="STACKLY | Contact" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Trusted medical devices and healthcare equipment designed for hospitals, clinics, and medical professionals."
+    />
+    <meta property="og:site_name" content="STACKLY" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- J-QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="font-primary">
+    <!-- CURSOR -->
+    <div class="cursor">
+      <div class="cursor-dot"></div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="re-loader" class="re-loader-wrap">
+      <div class="loader">
+        <svg
+          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlns="https://www.w3.org/2000/svg"
+          width="550"
+          height="210"
+          viewBox="0 0 550 210"
+        >
+          <path
+            d="m0,130.08h44.51c7.08-3.45,11.54-24.65,19.42-24.81s13.23,22.54,21.03,24.81c10.03,2.92,29.69-14.6,39.91-12.4,4.58.98,9.34,12.36,14.02,12.4,3.54.03,7.25-9.31,10.79-9.17,3.24.13,6.17,7.93,9.17,9.17s9.68-1.48,12.4,0c2.4,1.3,3.45,10.3,5.93,9.17,3.23-1.48,2.82-103.01,8.09-103.01,6.96,0,12.35,137.53,16.72,137.53,3.9,0-.09-36.61,8.49-43.69,3.41-2.81,13.69,1.93,17.66,0,7.17-3.49,11.72-24.71,19.69-25.08,8.62-.4,15.39,22.86,23.73,25.08,8.99,2.38,26.51-12.76,35.6-10.79,5.58,1.21,11.46,15.82,17.12,15.1,3.88-.49,4.87-12.59,8.76-12.94,3.01-.28,5.7,7.46,8.49,8.63s9.75-1.43,12.54,0,4.03,9.39,7.01,9.71c4.98.54,2.64-103.55,8.63-103.55,5.16,0,8.8,111.51,12.94,111.64,5.02.16,5.01-15.2,9.3-17.8s15.02,2.06,19.42,0c7.39-3.46,12.74-25.17,20.9-25.08,8.97.09,13.68,25.85,22.38,28.04,9.17,2.31,25.4-15.93,34.79-14.83,4.95.58,11.31,10.3,16.04,11.87h44.51"
+            stroke-linejoin="round"
+            stroke-width="2"
+            fill="none"
+            stroke="#2a8e9e"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- SITE CONTENT -->
+    <div>
+      <!-- NAVBAR & HOME -->
+      <div class="max-w-7xl mx-auto w-full relative overflow-hidden">
+        <!-- NAVBAR -->
+        <header
+          class="fixed top-0 left-0 right-0 max-w-7xl mx-auto w-full z-40 text-sm"
+        >
+          <!-- DESKTOP NAVBAR -->
+          <nav
+            aria-label="navbar"
+            id="navbar"
+            class="bg-white flex items-center justify-between px-6 md:px-12 py-3 md:py-4 text-white navbar shadow-md"
+          >
+            <div>
+              <a href="./index.html"
+                ><img src="../src/assets/logo.webp" alt="logo" class="h-8"
+              /></a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+              <!-- HOME DROPDOWN -->
+              <div class="relative">
+                <div class="flex items-center gap-1 font-medium">
+                  <a href="./index.html" class="nav-hover inline-block">
+                    <span class="nav-text">HOME</span>
+                  </a>
+
+                  <button id="homeToggle">
+                    <svg
+                      id="homeCaret"
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Dropdown -->
+                <div
+                  id="homeMenu"
+                  class="absolute left-0 mt-3 w-36 rounded-xl bg-white text-black backdrop-blur-xl border border-white/20 shadow-lg overflow-hidden hidden"
+                >
+                  <a
+                    href="../index.html"
+                    class="home-item block px-6 py-4 text-sm hover:bg-primary/10"
+                    >Home 1</a
+                  >
+                </div>
+              </div>
+
+              <a href="./about.html" class="nav-hover inline-block">
+                <span class="nav-text">ABOUT</span>
+              </a>
+              <a href="./services.html" class="nav-hover inline-block">
+                <span class="nav-text">SERVICES</span>
+              </a>
+              <a href="./product.html" class="nav-hover inline-block">
+                <span class="nav-text">PRODUCTS</span>
+              </a>
+              <a
+                href="./contact.html"
+                class="nav-hover inline-block text-primary"
+              >
+                <span class="nav-text">CONTACT</span>
+              </a>
+              <a href="./dashboard.html" class="nav-hover inline-block">
+                <span class="nav-text">DASHBOARD</span>
+              </a>
+            </div>
+
+            <div>
+              <div class="hidden xl:flex items-center gap-3 text-xl">
+                <a href="./404.html" class="hidden lg:flex items-center gap-3">
+                  <div
+                    class="call-icon w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="text-sm">
+                    <p class="font-medium">Get Consultation</p>
+                    <p class="text-gray-500">017-50050088</p>
+                  </div>
+                </a>
+
+                <a
+                  class="flex items-center gap-3 px-4 py-2.5 rounded-full bg-primary"
+                  href="./login.html"
+                >
+                  <div
+                    class="flex items-center justify-center text-primary bg-white rounded-full w-8 h-8"
+                  >
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+
+                  <div class="text-white font-medium">
+                    <p>Login</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- HAMBURGER ICON -->
+            <div class="text-2xl cursor-pointer ham-icon block xl:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+
+          <!-- MOBILE NAV -->
+          <div
+            class="fixed inset-0 w-full h-full bg-white flex flex-col gap-12 justify-center px-4 xsm:px-6 sm:px-12 md:px-20 z-40 transform -translate-y-full transition-transform duration-1000 text-xl sm:text-3xl font-bold mobile-menu"
+          >
+            <!-- HOME with sub menu -->
+            <div class="relative">
+              <div class="flex items-center gap-2 menu-link">
+                <a href="./index.html">HOME</a>
+
+                <button id="mobileHomeToggle">
+                  <i
+                    id="mobileCaret"
+                    class="fa-solid fa-chevron-down text-lg"
+                  ></i>
+                </button>
+              </div>
+
+              <div
+                class="mt-4 hidden absolute bg-white text-black rounded-lg z-40 w-40 px-6 py-6 text-2xl"
+                id="mobileHomeMenu"
+              >
+                <a class="block mobile-home-item mb-3" href="../index.html"
+                  >Home 2</a
+                >
+              </div>
+            </div>
+
+            <a class="menu-link" href="./about.html">ABOUT</a>
+            <a class="menu-link" href="./services.html">SERVICES</a>
+            <a class="menu-link" href="./product.html">PRODUCTS</a>
+            <a class="menu-link text-primary" href="./contact.html">CONTACT</a>
+            <a class="menu-link" href="./dashboard.html">DASHBOARD</a>
+            <a class="menu-link" href="./login.html">LOGIN</a>
+            <button
+              class="close-menu text-2xl cursor-pointer absolute top-12 right-3 xsm:right-6 md:right-12 p-4 border border-white/20 rounded-full"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </header>
+      </div>
+
+      <!-- HERO SECTION WITH FORM -->
+      <main
+        id="contact"
+        class="contact-section mt-32 max-w-7xl mx-auto overflow-hidden"
+      >
+        <!-- TOP AREA -->
+        <div
+          class="grid lg:grid-cols-2 gap-16 items-start px-4 md:px-8 py-16 bg-white rounded-3xl"
+        >
+          <!-- LEFT INFO -->
+          <div class="contact-left">
+            <p class="contact-label text-sm tracking-widest mb-4">CONTACT US</p>
+
+            <h2
+              class="contact-title text-3xl md:text-4xl xl:text-5xl font-semibold mb-6"
+            >
+              Let's Get in Touch
+            </h2>
+
+            <p class="text-gray-500 mb-10 contact-meet">
+              Schedule a Meeting with Us
+            </p>
+
+            <div class="space-y-6">
+              <a href="./404.html" class="flex gap-5 items-center">
+                <div
+                  class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Email</h4>
+                  <p class="text-gray-500">info@stackly.com</p>
+                </div>
+              </a>
+
+              <a href="./404.html" class="flex gap-5 items-center">
+                <div
+                  class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Phone</h4>
+                  <p class="text-gray-500">+1 234 567 890</p>
+                </div>
+              </a>
+
+              <a href="./404.html" class="flex gap-5 items-center">
+                <div
+                  class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Working Hours</h4>
+                  <p class="text-gray-500">Monday – Friday: 9AM – 6PM</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="contact-image-wrap relative">
+            <img
+              src="../src/assets/home11.webp"
+              alt="contact"
+              class="contact-image w-full h-96 object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrap px-4 md:px-8 py-16 bg-white rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-8">Contact Form</h3>
+
+          <form id="contactForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label>First Name <span class="text-red-500">*</span></label>
+                <input
+                  name="first"
+                  placeholder="Enter your first name"
+                  class="input-field border border-gray-300 w-full p-4 bg-gray-50"
+                />
+                <p class="error text-red-500 text-sm hidden">
+                  Please fill the field
+                </p>
+              </div>
+
+              <div>
+                <label>Last Name <span class="text-red-500">*</span></label>
+                <input
+                  name="last"
+                  placeholder="Enter your last name"
+                  class="input-field border border-gray-300 w-full p-4 bg-gray-50"
+                />
+                <p class="error text-red-500 text-sm hidden">
+                  Please fill the field
+                </p>
+              </div>
+
+              <div>
+                <label>Email Address <span class="text-red-500">*</span></label>
+                <input
+                  name="email"
+                  placeholder="Enter your mail"
+                  class="input-field border border-gray-300 w-full p-4 bg-gray-50"
+                />
+                <p class="error text-red-500 text-sm hidden">
+                  Enter valid @gmail.com email
+                </p>
+              </div>
+
+              <div>
+                <label>Subject <span class="text-red-500">*</span></label>
+                <input
+                  name="subject"
+                  placeholder="Enter subject"
+                  class="input-field border border-gray-300 w-full p-4 bg-gray-50"
+                />
+                <p class="error text-red-500 text-sm hidden">
+                  Please fill the field
+                </p>
+              </div>
+
+              <div>
+                <label>Mobile <span class="text-red-500">*</span></label>
+                <input
+                  type="number"
+                  name="phone"
+                  placeholder="Enter your number"
+                  class="input-field border border-gray-300 w-full p-4 bg-gray-50 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                />
+                <p class="error text-red-500 text-sm hidden">
+                  Please fill the field
+                </p>
+              </div>
+
+              <div>
+                <label>Purpose <span class="text-red-500">*</span></label>
+                <input
+                  name="website"
+                  placeholder="Enter purpose"
+                  class="input-field border border-gray-300 w-full p-4 bg-gray-50"
+                />
+                <p class="error text-red-500 text-sm hidden">
+                  Please fill the field
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <label
+                >Comments / Questions <span class="text-red-500">*</span></label
+              >
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Enter your message"
+                class="input-field border border-gray-300 w-full p-4 bg-gray-50"
+              ></textarea>
+              <p class="error text-red-500 text-sm hidden">
+                Please fill the field
+              </p>
+            </div>
+
+            <button class="send-btn border px-8 py-4 mt-4">Send Message</button>
+          </form>
+        </div>
+      </main>
+
+      <!-- FAQ -->
+      <section
+        class="faq-section max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-20 overflow-hidden"
+      >
+        <div class="">
+          <!--  HEADER  -->
+          <div class="text-center mb-20">
+            <p
+              class="faq-label text-primary mb-4 flex justify-center items-center gap-2"
+            >
+              <i class="fa-solid fa-circle-question"></i> FAQ's
+            </p>
+
+            <h2
+              class="faq-title text-3xl md:text-4xl xl:text-5xl font-semibold mb-6"
+            >
+              Frequently Asked Questions.
+            </h2>
+
+            <p class="faq-desc text-gray-500 max-w-2xl mx-auto">
+              Find clear answers to common questions regarding our real estate
+              services, construction projects, timelines, and design solutions.
+            </p>
+          </div>
+
+          <!-- FAQ GRID -->
+          <div class="grid lg:grid-cols-3 gap-6">
+            <div class="h-full rounded-2xl">
+              <img
+                class="object-cover h-full rounded-2xl"
+                src="../src/assets/faq.webp"
+                alt="faq"
+              />
+            </div>
+
+            <div class="faq-grid flex flex-col gap-6 lg:col-span-2">
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>What services do you provide?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Everything you need to know about our certified medical
+                    devices, shipping, safety standards, and support services.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Are your medical devices certified and approved?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    All medical devices available on our platform meet
+                    recognized healthcare quality standards and comply with
+                    applicable regulatory guidelines.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span
+                    >Can I use these devices at home without professional
+                    assistance?</span
+                  >
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Many of our medical devices are designed for safe home use,
+                    such as monitoring equipment and basic healthcare tools.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Do you provide warranty on medical equipment?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Yes. Most medical devices include manufacturer warranty
+                    coverage. Warranty terms vary depending on the product type
+                    and brand. Full warranty details are available on each
+                    product page.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span
+                    >Is a prescription required to purchase medical
+                    devices?</span
+                  >
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Some specialized medical equipment may require a valid
+                    prescription depending on regulatory requirements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div class="faq-item bg-gray-100 rounded-2xl overflow-hidden">
+                <button
+                  class="faq-question w-full flex justify-between items-center p-6 text-left"
+                >
+                  <span>Can I return or replace a medical device?</span>
+                  <i class="faq-icon fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer px-6">
+                  <p class="text-gray-500 pb-6">
+                    Yes. Returns and replacements are available based on our
+                    return policy. Items must remain unused, undamaged, and in
+                    original packaging unless defective.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="stackly-footer max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 pt-16 overflow-hidden"
+      >
+        <div class="">
+          <!-- GRID -->
+          <div
+            class="footer-grid grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
+          >
+            <!-- ABOUT -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                About Us
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li><a href="./index.html" class="footer-link">Home</a></li>
+                <li>
+                  <a href="./about.html" class="footer-link">About Us</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="footer-link">Services</a>
+                </li>
+                <li>
+                  <a href="./product.html" class="footer-link">Products</a>
+                </li>
+                <li>
+                  <a href="./dashboard.html" class="footer-link">Dashboard</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Terms and Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="footer-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Categories
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Vitamins & Supplements</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Personal Care & Beauty</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Medicines</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Health & First Aids</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Weight Loss & Fitness</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Mum & Baby</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Organic & Gluten Free</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- CUSTOMER CARE -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Customer Care
+              </h3>
+
+              <ul class="space-y-3 text-gray-600">
+                <li>
+                  <a href="./404.html" class="footer-link">My Account</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">My Orders</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Track Your Order</a>
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link">Wishlist</a>
+                </li>
+                <li><a href="./404.html" class="footer-link">FAQs</a></li>
+                <li>
+                  <a href="./404.html" class="footer-link"
+                    >Refunds/Return Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- STORE LOCATIONS -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Store Locations
+              </h3>
+
+              <div class="space-y-6 text-gray-600">
+                <div>
+                  <p>9863 - 9867 Mill Road,<br />Cambridge, MG09 99HT</p>
+                  <a href="./404.html" class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+
+                <div>
+                  <p>9870 St Vincent Place,<br />Glasgow, DC 45 Fr 45</p>
+                  <a href="./404.html" class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+
+                <div>
+                  <p>8901 Marmora Road,<br />Glasgow, D04 89GR</p>
+                  <a href="./404.html" class="footer-link text-sm text-primary"
+                    >Get Directions</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- CUSTOMER SUPPORT -->
+            <div class="footer-col">
+              <h3 class="footer-title text-lg font-semibold mb-6 text-gray-900">
+                Customer Support
+              </h3>
+
+              <div class="space-y-6 text-gray-600">
+                <!-- phone -->
+                <a href="./404.html" class="flex items-center gap-4">
+                  <div>
+                    <div class="text-3xl text-primary">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">24/7 Customer Service</p>
+                    <p class="font-semibold text-gray-900">
+                      +1 800 559 6580 <br />
+                      +1 800 559 6588
+                    </p>
+                  </div>
+                </a>
+
+                <!-- email -->
+                <a href="./404.html" class="flex items-center gap-4">
+                  <div>
+                    <div class="text-3xl text-primary">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p class="text-sm text-gray-500">Email Us:</p>
+                    <p class="font-semibold text-gray-900">info@stackly.com</p>
+                  </div>
+                </a>
+
+                <!-- social -->
+                <div
+                  class="footer-socials flex gap-5 pt-2 text-gray-500 text-xl"
+                >
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="./404.html" class="footer-social"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div
+          class="footer-copy text-center text-gray-400 mt-6 py-6 border-t border-gray-300"
+        >
+          Copyright © <span id="year"></span> Stackly. All Rights Reserved.
+        </div>
+      </footer>
+
+      <!-- SCROLL TO TOP -->
+      <button
+        class="scroll-top-btn fixed bottom-5 right-5 z-50 opacity-0 cursor-pointer"
+      >
+        <!-- progress circle -->
+        <svg class="scroll-progress w-15 h-15 -rotate-90">
+          <circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke-width="2"
+            class="progress-bg fill-none stroke-gray-200"
+          />
+
+          <circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke-width="4"
+            class="progress-ring fill-none stroke-primary"
+          />
+        </svg>
+
+        <!-- arrow -->
+        <div
+          class="scroll-icon absolute inset-0 flex items-center justify-center"
+        >
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </button>
+    </div>
+
+    <!-- JS -->
+    <script src="./contact.js"></script>
+  </body>
+</html>
