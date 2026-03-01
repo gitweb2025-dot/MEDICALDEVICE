@@ -266,216 +266,169 @@
           id="dashboard"
           class="mt-16 max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-16 overflow-hidden"
         >
-          <div>
-            <!-- SUMMARY -->
-            <div class="bg-white mb-8 section-summary">
-              <h2 class="text-lg font-semibold text-slate-700 mb-5">Summary</h2>
+          <!-- HEADER -->
+          <div class="flex flex-wrap justify-between items-center mb-10">
+            <div>
+              <h1 class="text-3xl font-semibold">Welcome back, Admin</h1>
+              <p class="text-gray-500 mt-1">
+                Operational performance overview for Stackly medical device
+                deployment and monitoring systems.
+              </p>
+            </div>
 
-              <div class="grid md:grid-cols-3 gap-6">
-                <!-- Pending -->
-                <div
-                  class="p-6 rounded-xl flex justify-between items-center card-hover summary-card bg-purple-50"
-                >
-                  <div>
-                    <p class="text-3xl font-bold text-purple-600">50</p>
-                    <p class="text-sm text-purple-600 mt-1">Pending Orders</p>
-                  </div>
+            <div class="flex flex-wrap gap-4 mt-4 md:mt-0">
+              <a href="./404.html" class="border px-5 py-3 rounded-lg bg-white">
+                Last 7 Days
+              </a>
 
-                  <div
-                    class="w-14 h-14 rounded-full bg-purple-500 flex items-center justify-center text-white"
-                  >
-                    <i class="fa-solid fa-list"></i>
-                  </div>
-                </div>
+              <a
+                href="./404.html"
+                class="bg-primary text-white px-6 py-3 rounded-lg"
+              >
+                Export Report
+              </a>
+            </div>
+          </div>
 
-                <!-- Completed -->
-                <div
-                  class="p-6 rounded-xl flex justify-between items-center card-hover summary-card bg-emerald-50"
-                >
-                  <div>
-                    <p class="text-3xl font-bold text-emerald-600">250</p>
-                    <p class="text-sm text-emerald-600 mt-1">
-                      Completed Orders
-                    </p>
-                  </div>
+          <!-- TOP CARDS -->
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mb-10">
+            <!-- Active Devices -->
+            <div
+              class="card-hover bg-teal-600 text-white p-6 rounded-xl transition-all"
+            >
+              <p class="opacity-80 text-sm">Active Devices</p>
+              <h3 class="text-3xl font-semibold mt-2">10,525</h3>
 
-                  <div
-                    class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white"
-                  >
-                    <i class="fa-solid fa-layer-group"></i>
-                  </div>
-                </div>
+              <div class="mt-4 h-2 bg-white/30 rounded">
+                <div class="h-full w-3/4 bg-white rounded"></div>
+              </div>
 
-                <!-- Balance -->
-                <div
-                  class="p-6 rounded-xl flex justify-between items-center card-hover summary-card bg-red-50"
-                >
-                  <div>
-                    <p class="text-3xl font-bold text-red-500">$15.80k</p>
-                    <p class="text-sm text-red-500 mt-1">My Balance</p>
-                  </div>
+              <p class="text-sm mt-2 opacity-80">
+                Across hospitals & clinics — +15.2% this week
+              </p>
+            </div>
 
-                  <div
-                    class="w-14 h-14 rounded-full bg-red-500 flex items-center justify-center text-white"
-                  >
-                    <i class="fa-solid fa-wallet"></i>
-                  </div>
-                </div>
+            <!-- Partner Facilities -->
+            <div
+              class="card-hover bg-white p-6 rounded-xl shadow-sm transition-all"
+            >
+              <p class="text-gray-500 text-sm">Partner Facilities</p>
+              <h3 class="text-3xl font-semibold mt-2">5,715</h3>
+
+              <div class="flex items-end gap-2 mt-4 h-12">
+                <div class="bg-green-300 w-2 h-6"></div>
+                <div class="bg-green-300 w-2 h-10"></div>
+                <div class="bg-green-300 w-2 h-8"></div>
+                <div class="bg-green-300 w-2 h-12"></div>
+                <div class="bg-green-300 w-2 h-9"></div>
               </div>
             </div>
 
-            <!-- ORDERS -->
+            <!-- Installations -->
             <div
-              class="bg-white rounded-xl p-3 md:p-6 shadow-sm section-orders"
+              class="card-hover bg-white p-6 rounded-xl shadow-sm transition-all"
             >
-              <div class="flex flex-wrap justify-between items-center mb-6">
-                <h2 class="text-lg font-semibold text-slate-700">
-                  Recent Orders
-                </h2>
+              <p class="text-gray-500 text-sm">New Installations</p>
+              <h3 class="text-3xl font-semibold mt-2">523</h3>
 
-                <a
-                  href="./404.html"
-                  class="px-5 py-2 rounded-lg text-white bg-teal-600 view-btn"
-                >
-                  View All Orders
-                </a>
+              <div class="mt-4 h-2 bg-gray-200 rounded">
+                <div class="h-full w-2/3 bg-teal-500 rounded"></div>
               </div>
 
-              <!-- horizontal scroll container -->
-              <div class="overflow-x-auto horizontal-scroll">
-                <table class="min-w-187.5 w-full">
-                  <thead
-                    class="text-left text-slate-500 text-sm border-b border-gray-300"
-                  >
-                    <tr>
-                      <th class="py-8">#Order No</th>
-                      <th>Purchased Date</th>
-                      <th>Total</th>
-                      <th>Status</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
+              <p class="text-sm text-gray-500 mt-2">
+                Installed & activated this week
+              </p>
+            </div>
 
-                  <tbody class="text-sm">
-                    <!-- ROW -->
-                    <tr
-                      class="border-b border-gray-300 order-row order-row-hover"
-                    >
-                      <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
-                      <td>August 20, 2024</td>
-                      <td>$3,650</td>
-                      <td>
-                        <span
-                          class="px-3 py-1 text-xs rounded-full bg-purple-100 text-purple-600 status-badge"
-                        >
-                          Pending
-                        </span>
-                      </td>
-                      <td>
-                        <a
-                          href="./404.html"
-                          class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
-                        >
-                          <i class="fa-solid fa-eye text-slate-600"></i>
-                        </a>
-                      </td>
-                    </tr>
+            <!-- Operational Units -->
+            <div
+              class="card-hover bg-white p-6 rounded-xl shadow-sm transition-all"
+            >
+              <p class="text-gray-500 text-sm">Operational Units</p>
+              <h3 class="text-3xl font-semibold mt-2">221</h3>
 
-                    <tr
-                      class="border-b border-gray-300 order-row order-row-hover"
-                    >
-                      <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
-                      <td>August 20, 2024</td>
-                      <td>$3,650</td>
-                      <td>
-                        <span
-                          class="px-3 py-1 text-xs rounded-full bg-blue-100 text-blue-600 status-badge"
-                        >
-                          Processing
-                        </span>
-                      </td>
-                      <td>
-                        <a
-                          href="./404.html"
-                          class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
-                        >
-                          <i class="fa-solid fa-eye text-slate-600"></i>
-                        </a>
-                      </td>
-                    </tr>
+              <div class="mt-4 space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>Monitoring Systems</span>
+                  <span>110</span>
+                </div>
 
-                    <tr
-                      class="border-b border-gray-300 order-row order-row-hover"
-                    >
-                      <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
-                      <td>August 20, 2024</td>
-                      <td>$3,650</td>
-                      <td>
-                        <span
-                          class="px-3 py-1 text-xs rounded-full bg-emerald-100 text-emerald-600 status-badge"
-                        >
-                          Completed
-                        </span>
-                      </td>
-                      <td>
-                        <a
-                          href="./404.html"
-                          class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
-                        >
-                          <i class="fa-solid fa-eye text-slate-600"></i>
-                        </a>
-                      </td>
-                    </tr>
-
-                    <tr
-                      class="border-b border-gray-300 order-row order-row-hover"
-                    >
-                      <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
-                      <td>August 20, 2024</td>
-                      <td>$3,650</td>
-                      <td>
-                        <span
-                          class="px-3 py-1 text-xs rounded-full bg-red-100 text-red-600 status-badge"
-                        >
-                          Cancelled
-                        </span>
-                      </td>
-                      <td>
-                        <a
-                          href="./404.html"
-                          class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
-                        >
-                          <i class="fa-solid fa-eye text-slate-600"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="flex justify-between">
+                  <span>Diagnostic Units</span>
+                  <span>111</span>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <!-- LOWER GRID -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
+            <!-- DEVICE ANALYTICS -->
+            <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm">
+              <h2 class="text-lg font-semibold text-slate-700 mb-6">
+                Sales Overview
+              </h2>
+              <!-- Revenue Monthly -->
+              <div>
+                <canvas id="revenueChart"></canvas>
+              </div>
+            </div>
+
+            <!-- CALENDAR + ACTIVITY -->
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold mb-4">Calendar</h3>
+
+              <div class="grid grid-cols-7 text-center text-sm gap-2 mb-6">
+                <span>1</span><span>2</span><span>3</span><span>4</span
+                ><span>5</span><span>6</span><span>7</span> <span>8</span
+                ><span>9</span>
+                <span class="bg-teal-100 rounded">10</span>
+                <span>11</span><span>12</span><span>13</span><span>14</span>
+              </div>
+
+              <h4 class="font-semibold mb-3">Activity Details</h4>
+
+              <ul class="space-y-3 text-sm text-gray-600">
+                <li>ICU Ventilator Installation — City Hospital</li>
+                <li>MRI Calibration — Metro Diagnostic Center</li>
+                <li>Equipment Training — Green Valley Clinic</li>
+                <li>Preventive Maintenance — Sunrise Medical</li>
+                <li>Patient Monitor Calibration — Metro Health Center</li>
+                <li>Ultrasound Device Setup — Prime Diagnostic Lab</li>
+                <li>Defibrillator Maintenance — LifeCare Clinic</li>
+                <li>MRI System Inspection — Advanced Imaging Center</li>
+              </ul>
+
+              <a
+                href="./404.html"
+                class="block mt-6 border text-center py-2 rounded-lg"
+              >
+                + Add new
+              </a>
             </div>
           </div>
         </main>
       </div>
 
       <!-- INVENTORY -->
-      <section class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 overflow-hidden">
-        <div class="bg-white rounded-xl shadow-sm p-6 med-section">
+      <section class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-6 overflow-hidden">
+        <div class="bg-white rounded-xl border border-gray-300 p-6 med-section">
           <!-- HEADER -->
-          <div class="flex justify-between items-center mb-6">
+          <div class="flex flex-wrap justify-between items-center gap-4 mb-6">
             <h2 class="text-lg font-semibold text-slate-700">
               Medical Devices Inventory
             </h2>
 
             <a
               href="./404.html"
-              class="px-5 py-2 rounded-lg text-white bg-teal-600 flex items-center gap-2 med-add-btn med-btn-hover"
+              class="px-5 py-3 rounded-lg text-white bg-primary flex items-center gap-2 med-add-btn med-btn-hover"
             >
               <i class="fa-solid fa-plus"></i>
               Add Device
             </a>
           </div>
 
-          <hr class="mb-6" />
+          <hr class="mb-6 text-gray-300" />
 
           <!-- SCROLL -->
           <div class="overflow-x-auto med-scroll">
@@ -493,8 +446,8 @@
 
               <tbody class="text-sm">
                 <!-- AVAILABLE -->
-                <tr class="bg-slate-50 med-row med-row-hover">
-                  <td class="py-4 flex items-center gap-3">
+                <tr class="med-row med-row-hover">
+                  <td class="py-6 flex items-center gap-3">
                     <div
                       class="w-12 h-12 bg-white rounded-lg shadow flex items-center justify-center"
                     >
@@ -535,8 +488,8 @@
                 </tr>
 
                 <!-- LOW STOCK -->
-                <tr class="bg-slate-50 med-row med-row-hover">
-                  <td class="py-4 flex items-center gap-3">
+                <tr class="med-row med-row-hover">
+                  <td class="py-6 flex items-center gap-3">
                     <div
                       class="w-12 h-12 bg-white rounded-lg shadow flex items-center justify-center"
                     >
@@ -577,8 +530,8 @@
                 </tr>
 
                 <!-- OUT OF STOCK -->
-                <tr class="bg-slate-50 med-row med-row-hover">
-                  <td class="py-4 flex items-center gap-3">
+                <tr class="med-row med-row-hover">
+                  <td class="py-6 flex items-center gap-3">
                     <div
                       class="w-12 h-12 bg-white rounded-lg shadow flex items-center justify-center"
                     >
@@ -623,26 +576,125 @@
         </div>
       </section>
 
-      <!-- CHART -->
-      <div
-        class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-16 overflow-hidden"
-      >
-        <h2 class="text-lg font-semibold text-slate-700 mb-6">
-          Sales Overview
-        </h2>
+      <!-- ORDERS -->
+      <section class="max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 py-12 overflow-hidden">
+        <div class="bg-white rounded-xl p-3 md:p-6 border border-gray-300 section-orders">
+          <div class="flex flex-wrap justify-between items-center mb-6">
+            <h2 class="text-lg font-semibold text-slate-700">Recent Orders</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Orders Comparison -->
-          <div>
-            <canvas id="ordersChart"></canvas>
+            <a
+              href="./404.html"
+              class="px-5 py-3 rounded-lg text-white bg-primary view-btn"
+            >
+              View All Orders
+            </a>
           </div>
 
-          <!-- Revenue Monthly -->
-          <div>
-            <canvas id="revenueChart"></canvas>
+          <!-- horizontal scroll container -->
+          <div class="overflow-x-auto horizontal-scroll">
+            <table class="min-w-187.5 w-full">
+              <thead
+                class="text-left text-slate-500 text-sm border-b border-gray-300"
+              >
+                <tr>
+                  <th class="py-8">#Order No</th>
+                  <th>Purchased Date</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody class="text-sm">
+                <!-- ROW -->
+                <tr class="border-b border-gray-300 order-row order-row-hover">
+                  <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
+                  <td>August 20, 2024</td>
+                  <td>$3,650</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 text-xs rounded-full bg-purple-100 text-purple-600 status-badge"
+                    >
+                      Pending
+                    </span>
+                  </td>
+                  <td>
+                    <a
+                      href="./404.html"
+                      class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
+                    >
+                      <i class="fa-solid fa-eye text-slate-600"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="border-b border-gray-300 order-row order-row-hover">
+                  <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
+                  <td>August 20, 2024</td>
+                  <td>$3,650</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 text-xs rounded-full bg-blue-100 text-blue-600 status-badge"
+                    >
+                      Processing
+                    </span>
+                  </td>
+                  <td>
+                    <a
+                      href="./404.html"
+                      class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
+                    >
+                      <i class="fa-solid fa-eye text-slate-600"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="border-b border-gray-300 order-row order-row-hover">
+                  <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
+                  <td>August 20, 2024</td>
+                  <td>$3,650</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 text-xs rounded-full bg-emerald-100 text-emerald-600 status-badge"
+                    >
+                      Completed
+                    </span>
+                  </td>
+                  <td>
+                    <a
+                      href="./404.html"
+                      class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
+                    >
+                      <i class="fa-solid fa-eye text-slate-600"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="border-b border-gray-300 order-row order-row-hover">
+                  <td class="py-8 text-teal-600 font-medium">#28VR5K59</td>
+                  <td>August 20, 2024</td>
+                  <td>$3,650</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 text-xs rounded-full bg-red-100 text-red-600 status-badge"
+                    >
+                      Cancelled
+                    </span>
+                  </td>
+                  <td>
+                    <a
+                      href="./404.html"
+                      class="w-9 h-9 border rounded-lg flex items-center justify-center eye-hover"
+                    >
+                      <i class="fa-solid fa-eye text-slate-600"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- ADDRESS -->
       <section
@@ -650,21 +702,21 @@
       >
         <div>
           <!-- ADDRESS SECTION -->
-          <div class="bg-white rounded-xl shadow-sm p-6 addr-section">
+          <div class="bg-white rounded-xl border border-gray-300 p-6 addr-section">
             <!-- HEADER -->
-            <div class="flex flex-wrap justify-between items-center mb-6">
+            <div class="flex flex-wrap justify-between items-center gap-4 mb-6">
               <h2 class="text-lg font-semibold text-slate-700">Address List</h2>
 
               <a
                 href="./404.html"
-                class="px-5 py-2 rounded-lg text-white bg-teal-600 flex items-center gap-2 add-btn-hover addr-add-btn"
+                class="px-5 py-3 rounded-lg text-white bg-primary flex items-center gap-2 add-btn-hover addr-add-btn"
               >
                 <i class="fa-solid fa-circle-plus"></i>
                 Add Address
               </a>
             </div>
 
-            <hr class="mb-6" />
+            <hr class="mb-6 text-gray-300" />
 
             <!-- HORIZONTAL SCROLL WRAPPER -->
             <div class="overflow-x-auto addr-scroll">
@@ -681,8 +733,8 @@
 
                 <tbody class="text-sm">
                   <!-- ROW -->
-                  <tr class="bg-slate-50 rounded-lg addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Riya</td>
+                  <tr class="rounded-lg addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Riya</td>
                     <td>25/B Milford Road, New York</td>
                     <td>riya@gmail.com</td>
                     <td>(+02) 123 4687 456</td>
@@ -706,8 +758,8 @@
 
                   <!-- Duplicate rows -->
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Amit</td>
+                  <tr class="addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Amit</td>
                     <td>12/7 Park Avenue, Chicago</td>
                     <td>amit@gmail.com</td>
                     <td>(+02) 987 6543 210</td>
@@ -729,8 +781,8 @@
                     </td>
                   </tr>
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Sophia</td>
+                  <tr class="addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Sophia</td>
                     <td>89 Sunset Blvd, Los Angeles</td>
                     <td>sophia@gmail.com</td>
                     <td>(+02) 456 7890 123</td>
@@ -752,8 +804,8 @@
                     </td>
                   </tr>
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Daniel</td>
+                  <tr class="addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Daniel</td>
                     <td>45 East Street, Houston</td>
                     <td>daniel@gmail.com</td>
                     <td>(+02) 321 9876 543</td>
@@ -775,7 +827,7 @@
                     </td>
                   </tr>
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
+                  <tr class="addr-row addr-card-hover">
                     <td class="py-4 text-teal-600 font-medium">Priya</td>
                     <td>22 Green Lane, Boston</td>
                     <td>priya@gmail.com</td>
@@ -799,8 +851,8 @@
                     </td>
                   </tr>
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Rahul</td>
+                  <tr class="addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Rahul</td>
                     <td>77 Lake View Road, Seattle</td>
                     <td>rahul@gmail.com</td>
                     <td>(+02) 213 5467 890</td>
@@ -823,8 +875,8 @@
                     </td>
                   </tr>
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Emma</td>
+                  <tr class="addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Emma</td>
                     <td>16 River Drive, Miami</td>
                     <td>emma@gmail.com</td>
                     <td>(+02) 876 2345 678</td>
@@ -846,8 +898,8 @@
                     </td>
                   </tr>
 
-                  <tr class="bg-slate-50 addr-row addr-card-hover">
-                    <td class="py-4 text-teal-600 font-medium">Michael</td>
+                  <tr class="addr-row addr-card-hover">
+                    <td class="py-6 text-teal-600 font-medium">Michael</td>
                     <td>31 Hilltop Street, Denver</td>
                     <td>michael@gmail.com</td>
                     <td>(+02) 543 6789 012</td>
@@ -877,7 +929,7 @@
 
       <!-- FOOTER -->
       <footer
-        class="stackly-footer max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 pt-16 overflow-hidden"
+        class="stackly-footer max-w-7xl mx-auto px-3 xsm:px-4 md:px-6 overflow-hidden"
       >
         <div class="">
           <!-- GRID -->

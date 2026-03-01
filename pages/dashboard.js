@@ -338,54 +338,12 @@ function startHeroAnimation() {
 }
 
 // CHART JS
-
-const currentMonthOrdersReceived = 6200;
-const currentMonthOrdersSold = 2500;
-const currentMonthOrdersSent = 4500;
-const currentMonthOrdersNot = 7000;
 const currentMonthRevenue = 15800;
 
 const monthlyRevenue = [
   12000, 13500, 14200, 15800, 17000, 16500, 18000, 19000, 17500, 20000, 21000,
   23000,
 ];
-
-const ordersCtx = document.getElementById("ordersChart");
-
-new Chart(ordersCtx, {
-  type: "bar",
-  data: {
-    labels: ["This Month"],
-    datasets: [
-      {
-        label: "Orders Received",
-        data: [currentMonthOrdersReceived],
-        backgroundColor: "#0ea5e9",
-      },
-      {
-        label: "Orders Sold",
-        data: [currentMonthOrdersSold],
-        backgroundColor: "#10b981",
-      },
-      {
-        label: "Orders Sent",
-        data: [currentMonthOrdersSent],
-        backgroundColor: "#FFD700",
-      },
-      {
-        label: "Orders Not Sent",
-        data: [currentMonthOrdersNot],
-        backgroundColor: "#FF5F1F",
-      },
-    ],
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: "top" },
-    },
-  },
-});
 
 const revenueCtx = document.getElementById("revenueChart");
 
